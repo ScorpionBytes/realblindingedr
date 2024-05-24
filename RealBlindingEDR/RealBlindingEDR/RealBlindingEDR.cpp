@@ -883,10 +883,10 @@ VOID ClearMiniFilterCallback() {
 
 		printf("\tFLT_VOLUMES [%d]: %I64x\n", i, FLT_VOLUMESAddr);
 		INT64 VolumesCallback = 0;
-		if (dwMajor == 10 && dwBuild < 22000) { 
+		if (dwMajor == 10 && dwBuild < 22621) { 
 			VolumesCallback = FLT_VOLUMESAddr + 0x120;
 		}
-		else if (dwMajor == 10 && dwBuild >= 22000) {
+		else if (dwMajor == 10 && dwBuild >= 22621) {
 			VolumesCallback = FLT_VOLUMESAddr + 0x130;
 		}
 		else if (dwMajor == 6) {
